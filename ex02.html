@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="Enter number" oninput="numberUp(this.value)"/>
+<span id="display"></span>
+<script>
+    function numberUp(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("display").innerHTML = "Your number had been upto " + (valNum + 1);
+    }
+</script>
+</body>
+</html>
